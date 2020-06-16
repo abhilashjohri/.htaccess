@@ -118,7 +118,16 @@ AddType text/x-vcard                        vcf
         Order allow,deny
         Deny from all
     </Files>
-
+    
+    <Files .htaccess>
+    order allow,deny
+    deny from all
+    </Files>
+    
+    <Files composer.json>
+    order allow,deny
+    deny from all
+    </Files>
 </IfModule>
 <IfModule mod_expires.c>
 <FilesMatch ".(eot|otf|svg|ttf|woff2?)$">
